@@ -99,8 +99,9 @@ textarea {
 html {
 /*my code here */
   background-color:#000;
- /* background-color: #fff;*/
   height: 100%;
+  width:100%;
+
 }
 
 body {
@@ -108,13 +109,62 @@ body {
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
+  /**enter color here***/
+  color:#fff;
+
 }
 
+/***** Base Styles *******/
+    header, footer{
+        height:80px;
+        width:100%;
+
+}
+
+main{
+    font-size:2.0em;
+    height: 250px;
+    width:100%;
+}
+
+/****** font styles ******/
+header{
+    font-family:'Lora', serif;
+    font-size:5em;
+    justify-content:left;
+}
+
+main{
+   
+     font-size:2.0em;
+}
+
+ul li {
+    display:inline;
+    padding: .25em;
+}
+
+/***** end font styles ******/
+
+/********flexbox model *******/
+header,
+footer,
+main {
+    align-items:center;
+    display:flex;
+}
+
+footer{
+    display:inline;
+}
+
+
 .wrapper {
-  /*add display:flex and set justify-content to space-between*/
+  align-items:center;
   display:flex;
-  /**Adjusted font weight my code**/
   font-weight: 400;
+  flex-flow: row wrap;
+  justify-content: center;
   justify-content:space-between;
 
 }
@@ -126,15 +176,18 @@ body {
   background-color: #0b0808;
   color: #fff;
   display:flex;
-/**Adjusted font-size for the div's**/
   font-size: 1.4em;
   height: 300px;
   justify-content:center;
+
   line-height: 1em;
   width:30%;
 
   
 }
+
+/********End of Flexbox Model ******/
+
 /** Border styles **/
 .div-2, .div-3 {
     border-left: .01em solid #999;
